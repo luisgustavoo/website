@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Luis Gustavo',
           theme: ThemeData(
-            primarySwatch: Colors.blue,
+            // primarySwatch: Colors.blue,
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.blue,
+            ),
           ),
           home: const HomePage(),
         );

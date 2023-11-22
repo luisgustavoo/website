@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:website/core/widgets/button_app.dart';
 
@@ -15,7 +16,12 @@ class SocialMedia extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ButttonApp(
+        ButtonApp(
+          icon: SvgPicture.asset(
+            'assets/images/linkedin.svg',
+            height: 16.h,
+            width: 16.w,
+          ),
           label: 'LinkedIn',
           width: 100.w,
           onPressed: () async {
@@ -25,7 +31,12 @@ class SocialMedia extends StatelessWidget {
         SizedBox(
           width: 50.w,
         ),
-        ButttonApp(
+        ButtonApp(
+          icon: SvgPicture.asset(
+            'assets/images/github-white.svg',
+            height: 16.h,
+            width: 16.w,
+          ),
           label: 'GitHub',
           width: 100.w,
           onPressed: () async {

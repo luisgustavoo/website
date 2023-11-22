@@ -17,10 +17,14 @@ class HomePage extends StatelessWidget {
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.network(
-                  'https://avatars.githubusercontent.com/u/59834387?s=400&u=43d4325f949dcb8dd9bd9f41d5d470f718b38df3&v=4',
+                SizedBox(
                   height: 200.h,
                   width: 200.h,
+                  child: CircleAvatar(
+                    backgroundImage: Image.network(
+                      'https://avatars.githubusercontent.com/u/59834387?s=400&u=43d4325f949dcb8dd9bd9f41d5d470f718b38df3&v=4',
+                    ).image,
+                  ),
                 ),
                 SizedBox(
                   height: 50.h,
